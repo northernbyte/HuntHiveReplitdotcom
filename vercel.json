@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
   "framework": null,
@@ -12,11 +13,12 @@
       "destination": "/index.html"
     }
   ],
-  "functions": {
-    "dist/index.js": {
-      "runtime": "vercel/node@18.x"
+  "functions": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/node@18.x"
     }
-  },
+  ],
   "crons": [
     {
       "path": "/api/cron/review-products",
