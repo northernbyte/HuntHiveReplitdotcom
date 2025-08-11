@@ -1,0 +1,19 @@
+Build a modern, visually appealing, Next.js application for Hunthive, a digital platform for outdoor and hunting gear recommendations. The initial version should be a static single-page application that is ready for deployment on Vercel. The homepage should be a clean landing page with a conversational UI, featuring three main options:
+“Know what you’re looking for?”
+“Going on an epic hunt?”
+“Don’t have an idea where to start?”
+The UI should include placeholder elements for AI agent responses, pricing comparisons, and gear recommendations, as the backend functionality will be implemented later.
+The application must be architected for future expansion, specifically to support the following server-side functionality:
+AI-driven cron jobs to review product databases, identify old reviews, and schedule re-reviews.
+AI-driven cron jobs to discover new products with affiliate programs and add them to a database.
+AI agents to review scheduled products, ensure quality, and sign up for affiliate programs.
+AI agents to create succinct product reviews and load them into the database.
+An AI agent for the main search bar that prioritizes internal affiliate products but can also perform a live web search for other options.
+The site must:
+Use a dark, modern outdoorsy theme with a color palette of forest greens, blacks, and orange highlights.
+Feature a hero section with a high-resolution, rugged mountain or hunter background image.
+Employ bold typography and large, clickable cards or buttons for navigation.
+Be designed with a clean, responsive layout that could be expanded into a full app.
+Structure the project with a clear separation between the front-end UI components and placeholder API routes (/api routes in Next.js) that can later be fleshed out with the AI and database logic.
+Include a vercel.json file with comments outlining where cron job configurations would be added in the future.
+The final output should be a well-structured, commented codebase that is ready to be exported to a GitHub repository and deployed to Vercel. The goal is to provide a solid foundation that can be incrementally built upon with the planned serverless functions and database integration.
