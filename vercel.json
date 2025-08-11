@@ -14,11 +14,7 @@
   ],
   "crons": [
     {
-      "path": "/api/cron/review-products",
-      "schedule": "0 2 * * *"
-    },
-    {
-      "path": "/api/cron/discover-products", 
+      "path": "/api/cron/discover-review-products", 
       "schedule": "0 6 * * *"
     },
     {
