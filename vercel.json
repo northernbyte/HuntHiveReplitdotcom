@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
   "framework": null,
@@ -13,24 +12,23 @@
       "destination": "/index.html"
     }
   ],
-  "functions": [
-    {
-      "src": "dist/index.js",
-      "use": "@vercel/node@18.x"
+  "functions": {
+    "dist/index.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "crons": [
     {
       "path": "/api/cron/review-products",
       "schedule": "0 2 * * *"
     },
     {
-      "path": "/api/cron/discover-products",
+      "path": "/api/cron/discover-products", 
       "schedule": "0 6 * * *"
     },
     {
       "path": "/api/cron/update-prices",
-      "schedule": "0 4 * * *"
+      "schedule": "0 */4 * * *"
     }
   ]
 }
