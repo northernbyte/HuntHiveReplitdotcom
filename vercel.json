@@ -12,12 +12,11 @@
       "destination": "/index.html"
     }
   ],
-  "functions": [
-    {
-      "src": "dist/index.js",
-      "use": "@vercel/node@18.x"
+  "functions": {
+    "dist/index.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "crons": [
     {
       "path": "/api/cron/review-products",
