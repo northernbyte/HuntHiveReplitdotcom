@@ -1,10 +1,26 @@
 import { Search, Mountain, Compass } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { useLocation } from "wouter";
 
 export default function HeroSection() {
+  const [, setLocation] = useLocation();
+
   const handleConversationOption = (option: string) => {
     console.log(`Selected option: ${option}`);
-    // TODO: Implement conversation flow logic
+    
+    switch (option) {
+      case 'search':
+        setLocation('/search');
+        break;
+      case 'hunt-planning':
+        setLocation('/hunt-planning');
+        break;
+      case 'guided-start':
+        setLocation('/guided-start');
+        break;
+      default:
+        console.log('Unknown option:', option);
+    }
   };
 
   return (
