@@ -17,15 +17,14 @@
       "src": "dist/index.js",
       "use": "@vercel/node@18.x"
     }
-  ]
-  },
+  ],
   "crons": [
     {
       "path": "/api/cron/review-products",
       "schedule": "0 2 * * *"
     },
     {
-      "path": "/api/cron/discover-products", 
+      "path": "/api/cron/discover-products",
       "schedule": "0 6 * * *"
     },
     {
